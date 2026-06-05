@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio — Mirko</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="titolo">E-Portfolio <span class="accent">/ Mirko</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#competenze">Competenze</a>
+            <a href="#projects">Progetti</a>
+            <a href="#contact">Contatti</a>
+        </nav>
+
+
+        <!-- Hamburger button — visibile solo su mobile -->
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Menu a tendina mobile -->
+    <div class="nav-mobile">
+        <a href="#home">Home</a>
+        <a href="#competenze">Competenze</a>
+        <a href="#projects">Progetti</a>
+        <a href="#contact">Contatti</a>
+    </div>
+
+    <section id="home" class="home">
+        <div class="ornamento">M</div>
+
+        <div class="wrap">
+            <div class="anello">
+                <div class="foto">
+                    <img src="mirko.jpg" alt="Mirko" id="foto">
+                    <span id="foto_iniziale">M</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testo fade-in" style="transition-delay:0.15s">
+            <div class="label">
+                E-Portfolio
+            </div>
+            <div class="name">Mirko</div>
+            <div class="ruolo">Studente ITIS · Informatica</div>
+            <p class="descrizione">
+                17 anni, Gela. Appassionato di tecnologia, programmazione e sviluppo software. Amo esplorare nuove tecnologie e migliorare le mie competenze ogni giorno. In questo portfolio, condivido i miei progetti, le mie competenze e il mio percorso di crescita nel mondo dell'informatica.   
+            </p>
+            <div class="motto">Inveniam viam aut faciam</div>
+        </div>
+</section>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-ornament">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<section id="skills">
+  <div class="section-heading fade-in">Competenze</div>
+  <h2 class="section-title fade-in">Stack & Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-item fade-in">
+      <div class="skill-top">
+        <span class="skill-name">HTML</span>
+        <span class="skill-pct">75%</span>
+      </div>
+      <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+      <div class="skill-note">Struttura semantica, layout, form</div>
+    </div>
+    <div class="skill-item fade-in" style="transition-delay:0.1s">
+      <div class="skill-top">
+        <span class="skill-name">CSS</span>
+        <span class="skill-pct">65%</span>
+      </div>
+      <div class="skill-track"><div class="skill-fill" style="width:65%"></div></div>
+      <div class="skill-note">Flexbox, grid, animazioni</div>
+    </div>
+    <div class="skill-item fade-in" style="transition-delay:0.2s">
+      <div class="skill-top">
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-pct">45%</span>
+      </div>
+      <div class="skill-track"><div class="skill-fill" style="width:45%"></div></div>
+      <div class="skill-note">DOM, logica di gioco, eventi</div>
+    </div>
+    <div class="skill-item fade-in" style="transition-delay:0.3s">
+      <div class="skill-top">
+        <span class="skill-name">C++ / ESP32</span>
+        <span class="skill-pct">25%</span>
+      </div>
+      <div class="skill-track"><div class="skill-fill" style="width:25%"></div></div>
+      <div class="skill-note">Programmazione microcontrollori, IoT</div>
+    </div>
+    <div class="skill-item fade-in" style="transition-delay:0.4s">
+      <div class="skill-top">
+        <span class="skill-name">Python</span>
+        <span class="skill-pct">25%</span>
+      </div>
+      <div class="skill-track"><div class="skill-fill" style="width:25%"></div></div>
+      <div class="skill-note">Programmazione base, algoritmi e funzioni</div>
+    </div>
+    <div class="skill-item fade-in" style="transition-delay:0.5s">
+        <div class="skill-top">
+            <span class="skill-name">Java</span>
+            <span class="skill-pct">20%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" style="width:20%"></div></div>
+        <div class="skill-note">Programmazione orientata agli oggetti</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-ornament">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-heading fade-in">Progetti</div>
+  <h2 class="section-title fade-in">Opere Completate</h2>
+
+  <div class="projects-grid">
+    <!-- Progetto 1 -->
+    <a class="proj-card fade-in" href="https://mirko1609.github.io/Ferrari/" target="_blank">
+      <div class="proj-preview">
+        <img src="img/FERRARI.png" alt="Ferrari Site preview" id="img-ferrari">
+        <div class="proj-preview-placeholder">Ferrari</div>
+            <div class="proj-overlay">
+            <div class="proj-overlay-btn">Visita Il Sito →</div>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-num">I · 2025</div>
+        <div class="proj-title">Ferrari Site</div>
+        <p class="proj-desc">Primo sito web realizzato. Pagina dedicata alla Ferrari con HTML e CSS base.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">HTML</span>
+          <span class="proj-tag">CSS</span>
+          <span class="proj-tag">First Project</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Progetto 2 -->
+    <a class="proj-card fade-in" href="https://mirko1609.github.io/Space-War" target="_blank" style="transition-delay:0.1s">
+      <div class="proj-preview">
+        <img src="./img/SPACE-WAR_LOG.png" alt="Space War preview" id="img-spacewar">
+        <div class="proj-preview-placeholder">Space War</div>
+        <div class="proj-overlay">
+          <div class="proj-overlay-btn">Visita Il Sito →</div>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-num">II · 2026</div>
+        <div class="proj-title">Space War</div>
+        <p class="proj-desc">Gioco browser-based in HTML, CSS E JavaScript. Game loop, collisioni, input da tastiera — zero framework, tutta logica scritta a mano.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">HTML</span>
+          <span class="proj-tag">CSS</span>
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">Game Dev</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-ornament">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-col-title">Contatti</div>
+      <a href="mailto:mirko.cacciatore1609@gmail.com" class="footer-link">E-mail</a>
+      <a href="https://maps.google.com/?q=Gela,Sicilia" target="_blank" class="footer-link">Gela, Italia</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Profili</div>
+      <a href="https://github.com/mirko1609" class="footer-link" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/mirko1609" class="footer-link" target="_blank">LinkedIn</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Istituto</div>
+      <a href="#" class="footer-link">ITIS — Informatica</a>
+      <a href="#" class="footer-link">Anno 2025/26</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Mirko — Tutti i diritti riservati</span>
+    <span class="footer-motto">Inveniam viam aut faciam.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
