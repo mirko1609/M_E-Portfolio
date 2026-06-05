@@ -173,6 +173,10 @@ nav a:hover::after{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    display: block;
+}
+
+.foto #foto_iniziale{
     display: none;
 }
 
@@ -605,6 +609,7 @@ nav a:hover::after{
   opacity: 0;
   pointer-events: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  
 }
 
 /* Stato aperto del menu mobile */
@@ -616,15 +621,16 @@ nav a:hover::after{
 
 .nav-mobile a {
   text-decoration: none;
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-dim);
   font-family: 'Cinzel', serif;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   border-bottom: 1px solid var(--border);
   transition: color 0.2s;
+  
 }
 
 .nav-mobile a:last-child { border-bottom: none; }
@@ -675,7 +681,7 @@ nav a:hover::after{
 
   /* Footer: da 3 colonne a 1 colonna */
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
   }
 
@@ -742,7 +748,7 @@ nav a:hover::after{
 
   /* Footer bottom in colonna su schermi molto piccoli */
   .footer-bottom {
-    flex-direction: column;
+    display: flex;
     gap: 0.5rem;
     text-align: center;
   }
