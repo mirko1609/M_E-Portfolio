@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
     font-size: clamp(13px, 1.1vw, 21px);
+    
 }
 
 :root {
@@ -21,6 +22,7 @@ html {
     --text-dim: #9a9080;
     --border: rgba(201,168,76,0.18);
     --border-hover: rgba(201,168,76,0.45);
+    --light: #c4c2be;
 
 }
 
@@ -30,7 +32,23 @@ html {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     min-height: 100vh;
+    transition: background 0.4s ease, color 0.4s ease;
   }
+
+
+body.light {
+    --gold: #9a6f1a;
+    --gold-light: #7a5210;
+    --gold-dim: #b8860b;
+    --dark: #e8e0cc;
+    --dark2: #ddd5bf;
+    --dark3: #d0c8b0;
+    --surface: #c8bfa8;
+    --text: #0f0d08;
+    --text-dim: #3a3020;
+    --border: rgba(154,111,26,0.3);
+    --border-hover: rgba(154,111,26,0.6);
+}
 
   /* grana sopra la pagina */
   body::after {
@@ -104,7 +122,31 @@ nav a:hover{
 nav a:hover::after{
     width: 100%;
 }
+/* Raggruppa bottoni a destra nell'header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--gold);
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    transition: border-color 0.3s, color 0.3s;
+    
+}
+
+.theme-toggle:hover {
+    border-color: var(--gold);
+}
 #home{
     display: grid;
     grid-template-columns: auto 1fr;

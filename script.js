@@ -61,3 +61,18 @@ window.addEventListener('resize', () => {
     navMobile.classList.remove('open');
   }
 });
+
+//modalità dark o light
+
+const modalita = document.getElementById("mode");
+
+modalita.addEventListener("click", (event) =>{
+  if(document.body.classList.contains('light')){
+    document.body.classList.remove('light');
+    modalita.innerText = "☾";
+  } else{
+    document.body.classList.add('light');
+    modalita.innerText = "☼";
+  }
+});
+
